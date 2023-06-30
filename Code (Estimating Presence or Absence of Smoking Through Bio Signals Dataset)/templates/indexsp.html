@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Estimating Smoking Presence through Bio Signals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #b3e0ff;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        form {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .general-info {
+            width: 48%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .personal-details {
+            width: 48%;
+            background-color: #ff4d4d;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        
+        #result {
+            margin-top: 20px;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+        
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center">Estimating Smoking Presence through Bio Signals</h1>
+
+    <form action="/output" method="post">
+
+        <div class="general-info">
+            <h2 style="color:#9400d3">General Information</h2>
+
+            <label for="index">ID:</label>
+            <input type="text" id="index" name="index" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+
+            <label for="age">Age (5-year gap):</label>
+            <input type="text" id="age" name="age" required>
+
+            <label for="height">Height (cm):</label>
+            <input type="text" id="height" name="height" required>
+
+            <label for="weight">Weight (kg):</label>
+            <input type="text" id="weight" name="weight" required>
+
+            <label for="waist">Waist Circumference (cm):</label>
+            <input type="text" id="waist" name="waist" required>
+
+            <label for="eyesight-left">Eyesight (Left):</label>
+            <input type="text" id="eyesight-left" name="eyesight-left" required>
+
+            <label for="eyesight-right">Eyesight (Right):</label>
+            <input type="text" id="eyesight-right" name="eyesight-right" required>
+
+            <label for="hearing-left">Hearing (Left):</label>
+            <input type="text" id="hearing-left" name="hearing-left" required>
+
+            <label for="hearing-right">Hearing (Right):</label>
+            <input type="text" id="hearing-right" name="hearing-right" required>
+
+            <label for="systolic">Blood Pressure (Systolic):</label>
+            <input type="text" id="systolic" name="systolic" required>
+
+            <label for="relaxation">Blood Pressure (Relaxation):</label>
+            <input type="text" id="relaxation" name="relaxation" required>
+
+            <label for="fasting-blood-sugar">Fasting Blood Sugar:</label>
+            <input type="text" id="fasting-blood-sugar" name="fasting-blood-sugar" required>
+
+        </div>
+
+        <div class="personal-details">
+            <h2 style="color:white">Personal Details</h2>
+
+            <label for="cholesterol">Cholesterol (Total):</label>
+            <input type="text" id="cholesterol" name="cholesterol" required>
+
+            <label for="triglyceride">Triglyceride:</label>
+            <input type="text" id="triglyceride" name="triglyceride" required>
+
+            <label for="hdl">HDL Cholesterol:</label>
+            <input type="text" id="hdl" name="hdl" required>
+
+            <label for="ldl">LDL Cholesterol:</label>
+            <input type="text" id="ldl" name="ldl" required>
+
+            <label for="hemoglobin">Hemoglobin:</label>
+            <input type="text" id="hemoglobin" name="hemoglobin" required>
+
+            <label for="urine-protein">Urine Protein:</label>
+            <input type="text" id="urine-protein" name="urine-protein" required>
+
+            <label for="serum-creatinine">Serum Creatinine:</label>
+            <input type="text" id="serum-creatinine" name="serum-creatinine" required>
+
+            <label for="ast">AST (Glutamic Oxaloacetic Transaminase):</label>
+            <input type="text" id="ast" name="ast" required>
+
+            <label for="alt">ALT (Glutamic Pyruvic Transaminase):</label>
+            <input type="text" id="alt" name="alt" required>
+
+            <label for="gtp">γ-GTP:</label>
+            <input type="text" id="gtp" name="gtp" required>
+
+            <label for="oral">Oral Examination Status:</label>
+            <input type="text" id="oral" name="oral" required>
+
+            <label for="dental-caries">Dental Caries:</label>
+            <input type="text" id="dental-caries" name="dental-caries" required>
+
+            <label for="tartar">Tartar Status:</label>
+            <input type="text" id="tartar" name="tartar" required>
+
+            <br><br>
+<!--        <input type="text" id="smoking" name="smoking" readonly hidden>-->
+
+    <button type="submit">Estimate Smoking</button>
+        </div>
+    </form>
+    
+
+</body>
+</html>
+
+
+
+

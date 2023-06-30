@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smoking Detection Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .left-column {
+            position: relative;
+            right: 20px;
+            bottom: 10px;
+            flex-basis: 55%;
+            padding-right: 40px;
+        }
+
+        .right-column {
+            position: absolute;
+            left: 790px;
+            bottom: 12px;
+            flex-basis: 50%;
+            padding-left: 10px;
+        }
+
+
+        h3 {
+            color: #ff0000;
+            margin-top: 0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #ff0000;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+
+        .contact-form {
+            margin-top: 40px;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form textarea {
+            width: 90%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form .button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <p style="font-size:50px;"><b>Estimating the presence or <br> absence of smoking through <br> bio signals</b></p>
+            <a href="#" class="button">Know More</a>
+            <br><br><br>
+            <img src="/static/maps1.jpg" alt="Image 1" width="40%" height="auto">
+            <p> Give a click on Predict on The Top it will Take You To Input you're Data Points</p>
+        </div>
+
+         <div class="right-column">
+            <a href="/" class="button">Home</a>
+            <a href="/predict" class="button">Prediction</a>
+            <br><br>
+            <img src="/static/img12.jpg" alt="Image 2" width="45%" height="auto">
+    <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form>
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="text" placeholder="Email Address" required>
+                    <input type="text" placeholder="Subject" required>
+                    <textarea placeholder="Tell us about your project" required></textarea>
+                    <button type="submit" class="button">Send Message</button>
+                </form>
+            </div>
+         </div>
+    </div>
+        
+        
+       
+</body>
+</html>
