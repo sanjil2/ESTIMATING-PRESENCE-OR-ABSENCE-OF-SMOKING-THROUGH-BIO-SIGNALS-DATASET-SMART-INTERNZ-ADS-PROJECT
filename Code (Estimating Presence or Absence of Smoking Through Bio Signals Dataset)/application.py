@@ -26,7 +26,7 @@ def predict():
         else:
             features.append(float(x))
     final = [np.array(features)]
-    prediction = model.predict_proba(final)
+    prediction = model.predict(final)
     if prediction[0] == "1":
         output = "Signs of smoking present"
     else:
