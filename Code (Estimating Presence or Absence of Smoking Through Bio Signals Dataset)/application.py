@@ -36,3 +36,9 @@ def predict():
 
 if __name__ == ' __main__':
     application.run()
+
+
+#To run Application in Terminal
+
+#$env:FLASK_APP = "application.py"
+#flask run
